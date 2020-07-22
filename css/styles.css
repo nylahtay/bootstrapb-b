@@ -5,3 +5,31 @@ Author: Nylah Tay Rogers
 Class: CIS-130
 Date Due: 7/31/20
 */
+
+
+:root{
+  --page-padding: 5rem;
+  --max-page-size: 1200px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Rowdies', cursive;
+}
+
+section.carousel, section.rooms {
+  margin: 2rem auto;
+  max-width: var(--max-page-size);
+}
+
+section.amenities {
+  background-image: url('../img/background.png');
+  background-size: cover;
+  padding: 2rem 0;
+}
+
+.amenities .inner {
+  margin: 0 auto;
+  max-width: var(--max-page-size);
+}
+nav {
+}
