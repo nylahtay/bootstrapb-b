@@ -18,6 +18,11 @@ h1, h2, h3, h4, h5 {
 
 h1 {color: #26b0dc;}
 
+.btn-primary {
+    background-color: #26b0dc;
+    border-color: #26b0dc;
+}
+
 main, section.carousel, section.rooms, footer {
   margin: 2rem auto;
 }
@@ -50,4 +55,42 @@ footer {margin:0; padding-top:3rem;}
 
 footer .bottom {padding:1rem;}
 .fa-child, .fa-baby {font-size:.75em;
+}
+
+
+#contact main {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    'article'
+    'form'
+    'aside';
+}
+
+#contact article { grid-area: article;}
+#contact aside { grid-area: aside;}
+#contact section.form { grid-area: form;}
+#contact .map {width: 100%;}
+
+@media (min-width:700px) {
+  #contact main {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+      'article article aside'
+      'form form aside';
+  }
+  #contact .map {width: 300px; height: 450px;}
+}
+
+
+@media (min-width:900px) {
+  #contact main {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+      'article article aside'
+      'form form aside';
+  }
+  #contact .map {width: 500px;}
 }
