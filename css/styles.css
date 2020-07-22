@@ -16,20 +16,38 @@ h1, h2, h3, h4, h5 {
   font-family: 'Rowdies', cursive;
 }
 
-section.carousel, section.rooms {
+h1 {color: #26b0dc;}
+
+main, section.carousel, section.rooms, footer {
   margin: 2rem auto;
-  max-width: var(--max-page-size);
 }
 
 section.amenities {
   background-image: url('../img/background.png');
   background-size: cover;
-  padding: 2rem 0;
+  padding: 5rem 0;
 }
 
 .amenities .inner {
   margin: 0 auto;
-  max-width: var(--max-page-size);
 }
 nav {
+}
+
+.amenities .inner ul li {
+  list-style: none;
+  margin: .5rem 0;
+  padding: 0 2rem;
+}
+.amenities .inner ul li i{
+  margin-right: .10rem;
+  margin-left: -2rem;
+  width: 1.5rem;
+}
+
+footer {margin-bottom: 0;}
+footer {margin:0; padding-top:3rem;}
+
+footer .bottom {padding:1rem;}
+.fa-child, .fa-baby {font-size:.75em;
 }
