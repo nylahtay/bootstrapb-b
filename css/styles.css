@@ -32,7 +32,16 @@ h1 {color: var(--primary);}
 a {    color: var(--primary);}
 a:hover { color: var(--primary-dark) }
 
-
+@media (min-width: 576px) {
+  .card-deck .card {
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+  }
+  .col {
+    margin-bottom: 1rem;
+  }
+}
 
 
 /* My Styles */
